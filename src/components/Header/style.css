@@ -1,0 +1,42 @@
+.header{
+    margin-bottom: 30px;
+}
+
+.header-contain{
+    height: 50px;
+    background-color:rgba(247, 17, 105, 0.8);
+    color: white;
+    text-align: center;
+}
+
+.header-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+    margin: 0 auto;
+    list-style: none;
+    padding-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.header-list .header-item{
+    cursor: pointer;
+    position: relative;
+
+    
+}
+
+.header-list .header-item-active::after{    
+    content: "";
+    width: 40px;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.25s linear;
+   
+    
+}
